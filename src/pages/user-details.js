@@ -20,7 +20,6 @@ const UserDetailsPage = ({ match, firstName, lastName, birth, city, accounts }) 
       <Route
         path={`${match.url}/account/:accountId`}
         render={(props) => {
-          console.log(props)
           const account = accounts.find(({ id}) => id === props.match.params.accountId);
           if (account) {
             return <Account {...props} {...account} />

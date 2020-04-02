@@ -101,7 +101,9 @@ export const users = [
   },
 ]
 
-const PublicLayout = () => (
+const PublicLayout = (props) => {
+  console.log("these are props : ",props);
+  return (
   <>
   <BrowserRouter>
     <header>
@@ -121,6 +123,6 @@ const PublicLayout = () => (
       </div>
     </BrowserRouter>
   </>
-);
+)};
 
 export { PublicLayout };
