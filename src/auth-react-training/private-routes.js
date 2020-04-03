@@ -1,8 +1,9 @@
 import React from 'react';
-import { Redirect, Route } from 'react-router-dom';
+import { Redirect, Route, useRouteMatch } from 'react-router-dom';
 import { fakeAuth } from './fake-auth';
 
 export function PrivateRoute({ children, ...rest }) {
+  console.log(useRouteMatch());
   return (
     <Route
       {...rest}

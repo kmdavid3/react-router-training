@@ -16,9 +16,10 @@ export default () => (
         <li><Link to="/protected">Protected Page</Link></li>
       </ul>
       <Switch>
-        <Route path="/public">
-          <PublicPage />
-        </Route>
+        <Route
+          path="/public"
+          render={(props) => <PublicPage {...props}/>}
+        />
         <Route path="/login">
           <LoginPage />
         </Route>
