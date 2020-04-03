@@ -1,16 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
-import { PrimaryLayout } from './layout/primary';
+// import { PrimaryLayout } from './layout/primary';
 // import { PublicLayout } from './layout/public';
 import { firebase } from './firebase/firebase';
+import AuthExample from './auth-react-training/index';
 
 
 ReactDOM.render(
   <React.StrictMode>
     {/* <PublicLayout user={{ email: 'test' }} /> */}
     {/* <PrimaryLayout user={{ email: 'test' }} /> */}
-    <PrimaryLayout />
+    {/* <PrimaryLayout /> */}
+    <AuthExample />
   </React.StrictMode>,
   document.getElementById('root')
 );
